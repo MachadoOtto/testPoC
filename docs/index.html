@@ -48,6 +48,7 @@
     </div>
 
     <script>
+        alert(document.domain + ":\nCookies:" + document.cookies)
         document.getElementById('location').textContent = document.location.href;
         document.getElementById('cookies').textContent = document.cookie || "No cookies available.";
         document.getElementById('localStorage').textContent = JSON.stringify(localStorage, null, 2) || "No local storage data.";
